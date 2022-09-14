@@ -19,9 +19,8 @@ source $ZSH/oh-my-zsh.sh
 
 # -------------------------------- #
 # Node Package Manager
-# -------------------------------- #
 # https://github.com/antfu/ni
-
+# -------------------------------- #
 alias nio="ni --prefer-offline"
 alias s="nr start"
 alias d="nr dev"
@@ -43,6 +42,7 @@ alias re="nr release"
 # -------------------------------- #
 
 # Use github/hub
+# https://github.com/github/hub
 alias git=hub
 
 # Go to project root
@@ -114,8 +114,6 @@ function gdc() {
 
 # -------------------------------- #
 # Directories
-#
-# I put
 # `~/i` for my projects
 # `~/f` for forks
 # `~/r` for reproductions
@@ -177,7 +175,6 @@ function serve() {
   fi
 }
 
-
 # go
 export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
@@ -186,8 +183,6 @@ go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
 
 # pnpm
-export PNPM_HOME="/Users/zguo/Library/pnpm"
-export PATH="$PNPM_HOME:$PATH"
 alias pn=pnpm
 # pnpm end
 

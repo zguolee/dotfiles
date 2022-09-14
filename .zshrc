@@ -182,10 +182,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 go env -w GO111MODULE=on
 go env -w GOPROXY=https://goproxy.cn,direct
 
-# pnpm
-alias pn=pnpm
-# pnpm end
-
 #proxy
 function enproxy() {
     export http_proxy=http://127.0.0.1:7890
